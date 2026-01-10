@@ -1,0 +1,111 @@
+.subscriptionCard {
+  padding: 20px;
+  background-color: var(--white-color);
+  /* background-color: var(--primary-color); */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  gap: 10px;
+  color: var(--black-color);
+
+  .subscriptionCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    @media (max-width: 500px) {
+      gap: 10px;
+    }
+
+    & h4 {
+      font-size: 24px;
+      margin-block-end: 0;
+      color: var(--white-color);
+    }
+
+    & p {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--black-color);
+      white-space: nowrap;
+
+      & span {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--black-color);
+      }
+    }
+  }
+
+  .subscriptionCardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & p {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--black-color);
+    }
+  }
+
+  .subscriptionCardFooter {
+    margin-top: 10px;
+  }
+}
+
+.subscriptionCardUpgrade {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.subscriptionCardBodyUpgrade {
+  & p {
+    color: var(--white-color) !important;
+  }
+}
+
+.subscriptionCardHeaderUpgrade {
+  & h4 {
+    font-size: 24px;
+    margin-block-end: 0;
+  }
+
+  & p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color) !important;
+
+    & span {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--white-color) !important;
+    }
+  }
+}
+
+.subscriptionCardFooter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.subscriptionCardTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.endDate {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-color);
+
+  & span {
+    font-weight: 600;
+  }
+}

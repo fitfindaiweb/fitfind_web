@@ -1,0 +1,48 @@
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--white-color);
+}
+
+.loaderBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.loader,
+.loader1 {
+  width: 40px;
+  aspect-ratio: 1;
+  --_g: no-repeat linear-gradient(135deg, #3a7bd5, #0a2a6c);
+  background: var(--_g) 0 0, var(--_g) 0 100%, var(--_g) 100% 100%;
+  background-size: 40% 40%;
+  transform: rotate(45deg);
+}
+
+.loader {
+  animation: l11 1s infinite linear;
+  transform: rotate(45deg) translateX(-5px);
+}
+
+.loader1 {
+  animation: l11 1s infinite linear reverse;
+  transform: rotate(45deg) translateX(5px);
+}
+@keyframes l11 {
+  25% {
+    background-position: 100% 0, 0 100%, 100% 100%;
+  }
+  50% {
+    background-position: 100% 0, 0 0, 100% 100%;
+  }
+  75% {
+    background-position: 100% 0, 0 0, 0 100%;
+  }
+  100% {
+    background-position: 100% 100%, 0 0, 0 100%;
+  }
+}

@@ -1,0 +1,298 @@
+.getTheAppMain {
+  padding-block: 100px;
+
+  @media screen and (max-width: 991px) {
+    padding-block: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-block: 40px;
+  }
+}
+
+.getTheAppSection {
+  background-image: url("/images/app-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.getTheAppSectionContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.getTheAppSectionLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px;
+}
+
+.getTheAppSectionRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.getTheAppSectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.getTheAppSectionHeader h2 {
+  color: var(--white-color);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.getTheAppSectionHeader p {
+  color: var(--white-color);
+  font-size: 22px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.getTheAppSectionDownload {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.downloadSubtitle {
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.getTheAppSectionDownloadButtons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.appStoreButton,
+.googlePlayButton {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.orDivider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.orText {
+  color: var(--white-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.qrCodeSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.qrCodeWrapper {
+  width: 150px;
+  height: 150px;
+  min-width: 110px;
+  min-height: 110px;
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.qrCodeText {
+  color: var(--white-color);
+  font-size: 1rem;
+  max-width: 150px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.phoneImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Tablet styles */
+@media (max-width: 992px) {
+  .getTheAppSectionContent {
+    gap: 30px;
+  }
+
+  .getTheAppSectionLeft {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .getTheAppSectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .getTheAppSectionHeader p {
+    font-size: 0.95rem;
+  }
+
+  .phoneImage {
+    max-width: 280px;
+  }
+}
+
+/* Mobile and small tablet styles */
+@media (max-width: 768px) {
+  .getTheAppSection {
+    border-radius: 15px;
+  }
+
+  .getTheAppSectionContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .getTheAppSectionLeft {
+    padding: 30px 20px;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .getTheAppSectionRight {
+    width: 100%;
+  }
+
+  .getTheAppSectionHeader {
+    text-align: center;
+    gap: 12px;
+  }
+
+  .getTheAppSectionHeader h2 {
+    font-size: 1.75rem;
+  }
+
+  .getTheAppSectionHeader p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .getTheAppSectionDownload {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .downloadSubtitle {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .getTheAppSectionDownloadButtons {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .orDivider {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .qrCodeSection {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .qrCodeWrapper {
+    width: 146px;
+    height: 146px;
+    padding: 8px;
+    margin: 0 auto;
+  }
+
+  .qrCodeText {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .phoneImage {
+    max-width: 240px;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .getTheAppSection {
+    border-radius: 12px;
+  }
+
+  .getTheAppSectionLeft {
+    padding: 25px 15px;
+    gap: 20px;
+  }
+
+  .getTheAppSectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .getTheAppSectionHeader p {
+    font-size: 0.85rem;
+  }
+
+  .downloadSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .getTheAppSectionDownloadButtons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .appStoreButton,
+  .googlePlayButton {
+    width: 160px !important;
+    height: auto !important;
+  }
+
+  .qrCodeWrapper {
+    width: 126px;
+    height: 126px;
+    padding: 8px;
+    margin: 0 auto;
+  }
+
+  .qrCodeText {
+    font-size: 0.85rem;
+  }
+
+  .phoneImage {
+    max-width: 200px;
+  }
+}

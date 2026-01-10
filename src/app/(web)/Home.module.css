@@ -1,0 +1,10 @@
+.styleCompanionSection {
+  padding-block: 60px;
+  background: #c0e4ff;
+}
+.companionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}

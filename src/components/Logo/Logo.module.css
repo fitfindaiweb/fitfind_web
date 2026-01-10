@@ -1,0 +1,13 @@
+.logo {
+  position: relative;
+  width: 70px;
+  height: 100px;
+  & img {
+    object-fit: contain;
+    object-position: center;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100px;
+    height: 42px;
+  }
+}

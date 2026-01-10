@@ -1,0 +1,148 @@
+.footer {
+  position: relative;
+  background: linear-gradient(
+    to bottom right,
+    var(--white-color) 0%,
+    var(--white-color) 70%,
+    var(--hero-gradient-mid) 100%
+  );
+  overflow: hidden;
+  border-top: 1px solid var(--border-color);
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  padding-block: 2rem;
+
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 320px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socialIcons > div {
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.linksHeading {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+.copyright {
+  padding-block: 1rem;
+}
+
+.copyright p {
+  text-align: left;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-family: var(--font-primary);
+}
+
+.copyrightContent {
+  display: flex;
+  border-top: 1px solid var(--border-color);
+  padding-block-start: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  @media screen and (max-width: 575px) {
+    flex-direction: column;
+  }
+}
+
+.copyrightLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .leftSection {
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .rightSection {
+    align-items: center;
+    text-align: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+
+  .copyright p {
+    text-align: center;
+  }
+}

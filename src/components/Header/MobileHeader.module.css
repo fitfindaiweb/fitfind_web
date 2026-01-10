@@ -1,0 +1,168 @@
+.header {
+  min-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  gap: 10px;
+
+  @media screen and (max-width: 1440px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-inline: 0;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  min-height: 70px;
+  min-width: 110px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 425px) {
+    min-width: 90px;
+  }
+}
+
+.hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--white-color) !important;
+}
+.secondaryHamburger {
+  fill: var(--white-color);
+}
+
+.drawer {
+  margin: 1rem;
+  overflow: clip;
+  border-radius: var(--section-border-radius);
+  height: calc(100vh - 2rem) !important;
+  background: var(--white-color) !important;
+}
+
+.secondaryDrawer {
+  background: var(--secondary-color) !important;
+}
+.drawerUserSection {
+  padding: 40px 1rem;
+}
+
+.drawerUserImage {
+  height: 45px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.drawerList {
+  height: 100%;
+  width: 100%;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.listItemText {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-heading-color);
+  font-family: var(--ff-primary);
+}
+.secondaryItemText {
+  color: var(--white-color);
+}
+.listItem svg {
+  fill: #717171;
+  font-size: 15px;
+}
+
+.cartNumbers {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  padding: 6px;
+  margin-left: 8px;
+}
+
+.subMenu {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  gap: 8px;
+}
+
+.subMenuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  & > p {
+    cursor: pointer;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--user-sidebar-color) !important;
+    font-family: var(--ff-primary-reg);
+  }
+}
+
+.icon {
+  margin-inline-start: 8px;
+  display: inline-block;
+
+  & svg {
+    fill: var(--primary-heading-color);
+  }
+}
+
+.searchInput__wrapper {
+  padding-top: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  @media screen and (max-width: 400px) {
+    gap: 5px;
+  }
+}
+
+.unreadNotification {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  background: var(--white-color);
+  color: var(--main-color);
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.notificationIcon {
+  position: relative;
+  cursor: pointer;
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  &.sticky {
+    background-color: var(--main-color);
+  }
+}

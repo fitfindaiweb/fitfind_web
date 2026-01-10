@@ -1,0 +1,46 @@
+.homeHeroSection {
+  position: relative;
+  min-height: 40vh;
+  padding-top: 172px;
+  background: linear-gradient(
+    180deg,
+    var(--hero-gradient-start) 0%,
+    var(--hero-gradient-mid) 50%,
+    var(--hero-gradient-end) 100%
+  );
+}
+
+.homeHeroSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(
+    0deg,
+    var(--hero-overlay-gradient) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+}
+
+.homeHeroSectionContent {
+  position: relative;
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.homeHeroSectionContent h1 {
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: var(--ff-primary);
+  color: var(--text-color);
+  margin: 0;
+}

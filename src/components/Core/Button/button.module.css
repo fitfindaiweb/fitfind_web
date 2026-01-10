@@ -1,0 +1,132 @@
+.btn {
+  outline: none;
+  border: none;
+  font-family: var(--ff-primary);
+  padding: 11px 25px;
+  font-size: var(--fs-btn);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transform-origin: 50% 50%;
+  width: max-content;
+  min-width: 150px;
+}
+
+.btn[data-type="square"] {
+  border-radius: 4px;
+}
+
+.btn[data-type="rounded"] {
+  border-radius: 17px !important;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.isSimpleHover {
+  transition: transform 0.2s ease-in;
+}
+
+.btn[data-size="sm"] {
+  padding: 6.5px 10px;
+}
+
+.btn[data-size="md"] {
+  padding: 10px 25px;
+}
+
+.btn[data-size="lg"] {
+  padding: 15px 30px;
+}
+
+.isSimpleHover:hover {
+  transform: scale(1);
+}
+
+.secondaryBtn {
+  border-radius: var(--secondary-border-radius);
+}
+
+.btn[data-variant="primary"] {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn[data-variant="gradient"] {
+  border-radius: 12px !important;
+  border: 1px solid #245dff;
+  background: linear-gradient(213deg, #0064fa 23.89%, #5fbcff 135.2%);
+  color: var(--white-color);
+}
+
+.btn[data-variant="primary-rounded"] {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 30px;
+}
+
+.btn[data-variant="secondary"] {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.btn[data-variant="secondary-rounded"] {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 30px;
+}
+
+.btn[data-variant="tertiary"] {
+  background-color: #f1f1f1;
+  color: var(--primary-text-color);
+}
+
+.btn[data-variant="tertiary-rounded"] {
+  background-color: #f1f1f1;
+  color: var(--primary-text-color);
+  border-radius: 30px;
+}
+
+.btn[data-variant="white"] {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.btn[data-variant="white-rounded"] {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border-radius: 30px;
+}
+
+.btn[data-variant="link"] {
+  --inset: 0px;
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding: 7px;
+  min-width: fit-content;
+}
+
+.btn[data-variant="danger"] .btn[data-variant="page"] {
+  --inset: 0px;
+  background-color: transparent;
+  color: #23272e;
+  padding: 0px 10px;
+  font-size: 18px;
+  min-width: fit-content;
+}
+
+.btn[data-variant="border"] {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

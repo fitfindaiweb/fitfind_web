@@ -1,0 +1,19 @@
+.home {
+  padding-top: 120px;
+}
+
+.subscriptionCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.noData {
+  grid-column: 1 / -1;
+}

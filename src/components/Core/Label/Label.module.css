@@ -1,0 +1,23 @@
+.labelText {
+  color: var(--label-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-100);
+  margin-bottom: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.onTopLabel {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--white-color);
+  line-height: 1;
+  padding-inline: 8px;
+  top: 1.5rem;
+  margin-inline-start: 6px;
+  font-family: var(--ff-primary-medium);
+  color: var(--placeholder-color);
+  transform: translateY(-50%);
+  opacity: 0.4;
+}

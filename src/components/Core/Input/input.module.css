@@ -1,0 +1,145 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.labelOnTop:has(input:focus) label {
+  top: 1rem;
+}
+
+.labelOnTop.hasValue label {
+  top: 1rem;
+}
+
+.inputBox {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-base);
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: var(--white-color);
+}
+
+.inputBox[data-variant="primary"] {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.inputBox[data-variant="rounded"] {
+  background-color: #FAFAFA;
+  border-radius: var(--input-border-radius);
+}
+
+.hasValue .labelOnTop__input {
+  padding-block-start: 1.8rem;
+}
+
+.labelOnTop__input:focus {
+  padding-block-start: 1.8rem;
+}
+
+.inputBox[data-variant="secondary"] {
+  background-color: var(--white-color);
+}
+
+.inputBox:focus-within {
+  outline: none !important;
+}
+
+.inputBox:disabled {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.noBorder {
+  border: none;
+}
+
+.inputPassContainer {
+  display: flex;
+  position: relative;
+  border-radius: var(--global-border-radius);
+}
+
+.inputPassContainer input::placeholder {
+  font-family: var(--ff-primary-semibold);
+  font-size: var(--fs-100);
+  opacity: 0.4;
+  color: var(--placeholder-color);
+}
+
+.inputPassContainer input:disabled {
+  background-color: var(--disabled-input-color);
+  color: #1e1e1e;
+  user-select: none;
+}
+
+.rightIcon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.inputPassContainer .passwordIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  color: #cacaca;
+}
+
+.errorText {
+  margin-top: 4px;
+  color: red;
+  width: fit-content;
+
+  font-size: 14px;
+}
+
+.offsetLeftError {
+  right: 56px;
+}
+
+.disabled {
+  color: var(--disabled-label-color);
+}
+
+.leftIconBox {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: max-content;
+  line-height: 1;
+}
+
+
+.inputBox[data-variant="rounded"] {
+  border-radius: var(--btn-border-radius);
+}
+
+.inputBox[data-variant="primary-bordered"] {
+  border-radius: var(--btn-bordered-radius);
+}
+
+.inputBox:not([type="number"])::-webkit-outer-spin-button,
+.inputBox:not([type="number"])::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 578px) {
+  .labelText {
+    font-size: var(--fs-base);
+  }
+}
+
+.rangeValue {
+  font-size: 14px;
+  color: #222;
+}
