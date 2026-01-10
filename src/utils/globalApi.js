@@ -14,12 +14,12 @@ const GlobalApi = ({ setLoading }) => {
   const searchParams = useSearchParams();
   const appRedirection = searchParams.get("appRedirection");
   const token = searchParams.get("token");
-
   useEffect(() => {
     if (appRedirection && token) {
       Cookies.set(CookiesKey?.accessToken, token, { expires: 30 });
+    } else {
+      window.history.replaceState({}, "", window.location.pathname);
     }
-    window.history.replaceState({}, "", window.location.pathname);
   }, [appRedirection, token]);
 
   const getPublicData = async () => {
