@@ -1,4 +1,4 @@
-export const apiUrl = "https://fitfind-backend-1da69a4b0355.herokuapp.com";
+export const apiUrl = "https://ai-api.fitfind.app";
 
 // export const apiUrl = "https://7l60bxbl-4017.inc1.devtunnels.ms";
 // live 1
